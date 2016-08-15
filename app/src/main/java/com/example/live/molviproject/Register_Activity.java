@@ -29,6 +29,7 @@ public class Register_Activity extends Activity {
     }
 
     protected void Initialize(){
+
         euname = (EditText) findViewById(R.id.editText);
         ename = (EditText) findViewById(R.id.editText2);
         password = (EditText) findViewById(R.id.editTextpassword);

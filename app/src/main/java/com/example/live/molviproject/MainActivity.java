@@ -12,19 +12,19 @@ import android.content.DialogInterface;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button login, reg;
+    private Button login, reg = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_login_register);
+        login = (Button) findViewById(R.id.login);
+        reg = (Button) findViewById(R.id.register);
 
         Initialize();
     }
 
 
-    protected void Initialize(){
-        login = (Button) findViewById(R.id.login);
-        reg = (Button) findViewById(R.id.register);
+    private void Initialize(){
 
 
         login.setOnClickListener(new View.OnClickListener() {

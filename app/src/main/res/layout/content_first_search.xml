@@ -37,8 +37,7 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="34dp"
-            android:id="@+id/spinnerblood1"
-            android:entryValues="@array/bloodgroup"
+            android:id="@+id/spinnerblood"
             />
 
 
@@ -53,17 +52,22 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerblood"
-            android:entryValues="@array/Area"></Spinner>
+            android:id="@+id/spinnerArea" >
+
+    </Spinner>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sreach"
-            android:id="@+id/sreach"
-
+            android:id="@+id/searchbtn"
+android:onClick="search"
             android:layout_marginTop="50dp"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
+
+
+
+
 
 </RelativeLayout>
